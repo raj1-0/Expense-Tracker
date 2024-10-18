@@ -42,8 +42,8 @@ For enabling live reload during development.
 
 ## Steps to Run the Application
 ### 1.Clone the Repository:
-git clone https://github.com/your-username/Daily-ExpenseSharing-Application.git
-cd daily-expenses-sharing-app
+-git clone https://github.com/your-username/Daily-ExpenseSharing-Application.git
+-cd daily-expenses-sharing-app
 
 ### 2. Set Up H2 Database:
 -Create a database for the application:
@@ -72,11 +72,11 @@ http://localhost:8080
 ### 1. Home Page API:
 http://localhost:8080/
 ### 2. Add Users Detail and Expenses:
-GET http://localhost:8080/addExpense 
-POST http://localhost:8080/saveExpense
+-GET http://localhost:8080/addExpense 
+-POST http://localhost:8080/saveExpense
 ### 3. Edit Users Detail and Expenses:
-GET http://localhost:8080/editExpense 
-POST http://localhost:8080/updateExpense
+-GET http://localhost:8080/editExpense 
+-POST http://localhost:8080/updateExpense
 ### 4. Delete Users Detail and Expenses:
 http://localhost:8080/deleteExpense 
 ### 5. Split Expenses:
