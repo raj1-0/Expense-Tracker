@@ -4,6 +4,7 @@ This is a backend service built using **Java**, **Spring Boot**, and **Maven** t
 
 ## Features
 
+- Add Users
 - Add new expenses
 - Split expenses by exact amounts, percentages, or equally
 - Manage user details and validate inputs
@@ -11,10 +12,10 @@ This is a backend service built using **Java**, **Spring Boot**, and **Maven** t
 
 ## Technologies Used
 
-- **Java 17**
-- **Spring Boot 3.3.4**
-- **Maven**
-- **H2** 
+- **Backend:** Java, Spring Boot, Maven
+- **Frontend:** Thymeleaf, HTML, CSS, Bootstrap
+- **Database:** H2
+- **Tools:** Postman, Git
 
 ## Dependencies
 
