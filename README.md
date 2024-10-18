@@ -32,7 +32,7 @@ For testing the application.
 ### 5. Spring Boot DevTools
 For enabling live reload during development.
 
-## Setup Instructions
+## Setup and Installation Instructions
 ### Prerequisites
 - **Java 17**
 - **Spring Boot 3.3.4**
