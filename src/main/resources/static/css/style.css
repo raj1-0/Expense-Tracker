@@ -1,5 +1,5 @@
 body {
-    background: none;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
     font-family: 'Arial', sans-serif;
     color: #fff;
     opacity: 0;
@@ -13,56 +13,94 @@ body.loaded {
 h1, h2 {
     text-align: center;
     margin-top: 20px;
-    color: #ffebcd; /* light color matching the background */
+    color: #ffebcd; /* Light color matching the background */
 }
 
 h1.form-heading, h2.form-heading {
-    color: #fff; /* white color for form headings */
+    color: #fff; /* White color for form headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
 .container {
     margin-top: 50px;
-    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent background for better readability */
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff; /* white text inside the container */
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background for better readability */
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 15px; /* More rounded corners for a softer look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
 
 .table {
     margin-top: 20px;
-    color: #fff; /* white text for the table */
 }
 
-.table th, .table td {
-    color: #fff; /* ensure table text is white */
+.table th {
+    background-color: #6a11cb; /* Header background color */
+    color: #fff; /* White text for the header */
+    padding: 10px; /* Padding for table header */
+}
+
+.table td {
+    color: #fff; /* White text for the table data */
+    padding: 10px; /* Padding for table cells */
+}
+
+.table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Highlight row on hover */
 }
 
 .btn {
     margin-right: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for button hover effects */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.btn-success {
+    background-color: #28a745; /* Success button color */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker shade on hover */
 }
 
 a {
-    color: #ffebcd; /* link color */
+    color: #ffebcd; /* Link color */
 }
 
 a.btn {
-    color: #fff; /* button link color */
+    color: #fff; /* Button link color */
 }
 
 input, button {
-    color: #000; /* black text for form elements */
+    color: #000; /* Black text for form elements */
 }
 
 label {
-    color: #fff;
+    color: #fff; /* Label text color */
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.8); /* white background for the card with some transparency */
+    background-color: rgba(255, 255, 255, 0.9); /* Lighter white background for the card with some transparency */
     border: none;
     border-radius: 10px;
 }
 
 .card-title {
-    color: #333;
+    color: #333; /* Darker title color for contrast */
+}
+
+/* Add a subtle animation to buttons on hover */
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Add a transition effect to links on hover */
+a:hover {
+    text-decoration: underline; /* Underline effect on hover for links */
 }

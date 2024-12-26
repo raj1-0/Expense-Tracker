@@ -1,14 +1,20 @@
 package com.example.expensetracker.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class Expense {
 
     @Id
@@ -20,6 +26,12 @@ public class Expense {
     private String email;
 
     private BigDecimal percentage;
+
+    @Column(length = 512)
+    private String encryptedData;
+    @Column(length = 512)
+//    private String encryptedAESKey;
+    private String iv;
 
     public Long getId() {
         return id;
@@ -63,4 +75,24 @@ public class Expense {
 
     private BigDecimal amount;
 
+//    public void setEncryptedAESKey(String encryptedAESKey) {
+//        this.encryptedAESKey = encryptedAESKey;
+//    }
+//
+//    public String getEncryptedAESKey() {
+//        return encryptedAESKey;
+//    }
+
+   
+
+    public void setIv(String s) {
+    }
+
+    public void setEncryptedData(String encryptedData) {
+        this.encryptedData = encryptedData;
+    }
+
+    public String getEncryptedData() {
+        return encryptedData;
+    }
 }

@@ -45,7 +45,7 @@ public class ExpenseController {
         return "redirect:/";
     }
 
-    @GetMapping("/equalSplit")
+    @GetMapping("/equalSpilt")
     public String showEqualSplitPage(Model model) {
         List<Expense> expenses = expenseService.getAllExpenses();
 
